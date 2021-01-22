@@ -1,0 +1,226 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #3e3e31;
+    scroll-behavior: smooth;
+    background-image: url(https://coinsbit.io/img/background/dot_rename.svg);
+}
+
+
+
+video {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+}
+
+.fa-customize {
+    font-size: 3rem;
+}
+
+.fa:hover {
+    color: royalblue;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.fa-color {
+    color: white;
+}
+ /*nav bar */
+.navbar {
+    margin-bottom: 5rem;
+}
+
+.navbar-nav .nav-item .nav-link {
+    cursor: pointer;
+}
+
+
+header .container .navbar {
+    margin: auto;
+    border-radius: 0 0 15px 15px;
+    
+}
+
+.container .navbar .navbar-brand  {
+    color: #D4A0A7;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.collapse .navbar-nav .nav-item a {
+    color: #D4A0A7;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* main */
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px,1fr));
+    width: 97%;
+    margin: 9rem auto;
+    grid-gap: 15px;
+}
+
+iframe {
+    border-radius: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.main h3 {
+    color:  #5DA271;
+    
+}
+
+.main p {
+    color: #D4A0A7;
+    padding-top: 15px;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width : 940px) {
+    iframe {
+        border-radius: 15px;
+        margin-bottom: 10px;
+        height: 170%;
+    }
+
+    .main h3 {
+        margin-top: 8rem;
+    }
+}
+
+/* location */
+.Location {
+    margin-top: -3rem;
+}
+.Location h3 {
+    text-align: center;
+    color: #5DA271;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.Location .container #googleMap {
+    border-radius: 15px;
+}
+
+/* contact info */
+.contact-info {
+    width: 95%;
+    margin: auto;
+}
+
+.contact-info h3 {
+    text-align: center;
+    color: #5DA271;
+    font-weight: bold;
+    padding: 20px 0px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'adress mail'
+    'phone mobile'
+    ;
+    text-align: center;
+    grid-gap: 20px;
+    
+}
+.info p {
+    font-size: 1.2rem;
+    font-weight: bold;
+   
+    color: #5DA271;
+}
+
+
+.contact-info .info .adress {
+    grid-area: adress;
+}
+
+.contact-info .info .mail {
+    grid-area: mail;
+    
+}
+
+
+.contact-info .info .phone {
+    grid-area: phone;
+}
+
+.contact-info .info .mobile {
+    grid-area: mobile;
+}
+
+
+.contact-info .info .adress img {
+    width: 75px;
+    animation: round 2s linear alternate infinite backwards;
+}
+
+@keyframes round {
+    from{
+        transform: translateY(-15px);
+    }
+
+    to {
+        transform: translateY(15px);
+    }
+}
+
+.mail {
+    margin-top: 2rem;
+}
+
+
+.mail .fa {
+    padding-bottom: 1rem;
+}
+
+.phone .fa {
+    padding: 1.5rem;
+}
+
+.mobile .fa {
+    padding: 1.5rem;
+}
+
+
+
+/* footer */
+
+footer{
+    padding: 0;
+    margin: auto;
+    width: 95%;
+    background-color: rgb(133, 150, 133);
+    border-radius: 15px;
+}
+footer h2 a {
+    color:white !important;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+footer h2 a:hover {
+    color: blue !important;
+    cursor: pointer !important;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+footer p {
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: capitalize;
+}

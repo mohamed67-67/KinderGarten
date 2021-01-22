@@ -1,0 +1,737 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #3e3e31;
+    scroll-behavior: smooth;
+    background-image: url(https://coinsbit.io/img/background/dot_rename.svg);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+video {
+    object-fit: cover;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+.fa-color {
+    color: white;
+}
+
+
+.fa:hover {
+    color: lavenderblush;
+    transform: scale(1.2);
+}
+
+/* Pop Ups */
+
+
+@keyframes PopUp {
+    from{
+        opacity: 0;
+        top: -2000px;
+    }
+
+    to {
+        opacity: 1;
+        top: 5px;
+    }
+}
+
+.far {
+    left: 7%;
+    top: 3%;
+    position: fixed;
+    font-size: 20px;
+    cursor: pointer;
+    color: royalblue;
+}
+
+.far:hover {
+    transform: rotate(570deg);
+    transition: 1s;
+}
+
+.pop-ups {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    opacity: 0;
+    position:fixed;
+    height: 90%;
+    width: 90%;
+    left: 5%;
+    top: -2000px;
+    background-color: silver;
+    z-index: 2000;
+    text-align: center;
+    grid-gap: 15px;
+    padding: 30px;
+    border-radius: 15px;
+    overflow-y: scroll;
+}
+
+
+/* Team Pop Up */
+
+#team .profile img {
+    width: 150px;
+    border-radius: 50%;
+}
+#team .profile img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+/*what we offer */
+
+#what-we-offer{
+    margin-top: 20px;
+    line-height: 50px;
+    color: white;
+    background-color: #5DA271;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: left;
+    background-image: url(https://coinsbit.io/img/background/dot_rename.svg);
+}
+
+
+
+/** navbar **/
+.navbar-nav .nav-item .nav-link {
+    cursor: pointer;
+}
+
+
+header .container .navbar {
+    margin: auto;
+    border-radius: 0 0 15px 15px;
+    
+}
+
+.container .navbar .navbar-brand  {
+    color: #D4A0A7;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.collapse .navbar-nav .nav-item a {
+    color: #D4A0A7;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+ /** hero **/
+
+.hero .hero1 {
+    text-align: left;
+}
+
+.hero .hero1  h1 {
+    color: #5DA271;
+    font-weight: 600;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.hero .hero1  {
+    margin-top: 3.5rem;
+}
+
+.hero .hero1 h3 {
+    color: #5DA271;
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    padding-bottom: 30px;
+}
+
+
+.hero .hero1 p {
+    color: #D4A0A7;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: capitalize;
+    padding-bottom:15px;
+}
+
+.hero .hero2 .video-container video {
+    border-radius: 20px;
+}
+/**about-us**/
+
+.about1 {
+    position: relative;
+    opacity: 0;
+    left: -20px;
+    z-index: 1;
+}
+
+.about2 {
+    position: relative;
+    left: -700px;
+    z-index: 2;
+}
+
+.about2 .container1 {
+    height: 100%;
+    width: 98%;
+    margin:auto;
+    padding: 10px 0;
+}
+.about2 .container1 img {
+    object-fit: cover;
+    border-radius: 10px;
+    width: 30% ;
+    object-position: center;
+    margin: 15px 5px;
+    transition: 0.5s;
+}
+
+.about2 .container1 img:hover{
+    cursor: pointer;
+}
+
+.zoom {
+    transform: scale(2);
+    transition: 5s;
+    z-index: 500;
+    
+}
+
+
+.about h2 {
+    color: #5DA271;
+    font-weight: 600;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+}
+
+.about  p {
+    color: #D4A0A7;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin-bottom: 10%;
+}
+
+.about a {
+    background-color: #e3e3e3;
+    width: 20px;
+    height: 15px;
+    color: #000;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.about a:hover {
+    background-color: #5da271;
+    color: #e3e3e3;
+}
+
+@keyframes swipe {
+    from {
+        left: -700px;
+        opacity: 0;
+    }
+    to {
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes swipee {
+    from {
+        left: 0px;
+        opacity: 1;
+    }
+    to {
+        left: -700px;
+        opacity: 0;
+    }
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+        left: -20px;
+        top: -20px;
+    }
+    to {
+        opacity: 1;
+        left: 0px;
+        top: 0px;
+    }
+}
+@keyframes disappear {
+    from {
+        opacity: 1;
+        left: 0px;
+        top: 0px;
+    }
+    to {
+        opacity:0;
+        left: -20px;
+        top: -20px;
+    }
+}
+
+/** services **/
+.card {
+    border-radius: 15px;
+    margin: 1rem;
+    background-color: #e3e3e3;
+}
+
+.card video {
+    border-radius: 15px 15px 0px 0px ;
+}
+
+.card img {
+    width: 300px!important;
+    height: 280px;
+    position: relative;
+    margin: auto;
+    top: -40px;
+    object-fit: cover;
+}
+
+.cards h4 span {
+    padding: 0px 15px;
+    color: black;
+}
+
+.cards .card h4:hover {
+    color: royalblue;
+}
+
+.card:hover h4 span {
+    animation: Down 1.5s ease  infinite  both;
+    position: absolute;
+    color: royalblue;
+}
+
+@keyframes Down {
+    from {
+        transform: translateY(-5px);
+    }
+
+    to {
+        transform: translateY(10px);
+    }
+}
+
+.card-body{
+    display: none;
+}
+
+.service .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    grid-auto-flow: dense;
+}
+
+
+.service h1 {
+    color: #5DA271;
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.cards .card h4 {
+    padding: 10px 10px;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cards .card h5,
+.cards .card p {
+    color: royalblue;
+    font-weight: bold;
+}
+
+
+/**conact**/
+.contact .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "pic form"
+    ;
+}
+
+.contact .container #form {
+    grid-area: form;
+    z-index: 1;
+}
+.contact .container .pic {
+    position: absolute;
+    grid-area: pic;
+    left: 25px;
+    z-index: 0;
+}
+.contact .container .pic img {
+    object-fit: cover;
+    width: 500px;
+    height: auto;
+    position: relative;
+    left: -60px;
+}
+
+.contact h2 {
+    margin: 40px auto;
+    color: #5DA271;
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+
+
+
+.contact .container #form button {
+    margin-top: 4rem ;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-left: auto;
+}
+
+.contact .container #form .form-label {
+    color: #5DA271;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.contact button:hover {
+    background-color: #5da271;
+}
+
+                 /** footer **/
+footer{
+    padding: 0;
+    margin: auto;
+    width: 95%;
+    background-color: rgb(133, 150, 133);
+    border-radius: 15px;
+}
+footer h2 a {
+    color:white !important;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+footer h2 a:hover {
+    color: blue !important;
+}
+
+footer p {
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.fa-arrow-up {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #D4A0A7;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.inv {
+    display: none;
+}
+
+/*  screen and (max-width: 1500px) */
+
+@media screen and (max-width: 1500px) {
+    .hero  {
+        display: grid;
+        margin:70px 20px 0;
+        grid-template-columns: 3fr 4fr;
+        grid-template-rows: 3fr;
+        grid-template-areas: 
+        "hero1 hero2"
+        ;
+    }
+    .hero1 {
+        grid-area: 'hero1';
+        text-align: center;
+
+    }
+    .hero2 {
+        grid-area: 'hero2';
+    }
+    /*about section */
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "about2 about1"
+        "about2 about1"
+        "about2 about1"
+        ;
+    }
+
+    .about2 {
+        grid-area: 'about2';
+        margin: 2%;
+    }
+
+    .about2 .container1 {
+        margin-top: 5%;
+    }
+    
+    .about1 {
+        grid-area: 'about1';
+        margin: 2%;
+    }
+}
+@media screen and (max-width: 995px) {
+    .hero  {
+        display: grid;
+        margin:70px 20px 0;
+        grid-template-columns: 3fr 4fr;
+        grid-template-rows: 3fr;
+        overflow: hidden;
+        grid-template-areas: 
+        "hero1 hero2"
+        ;
+    }
+    .hero .hero1 {
+        text-align: left;
+    }
+    
+    .hero .hero1  h1 {
+        color: #5DA271;
+        font-weight: 600;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+    }
+    
+    .hero .hero1  {
+        margin-top: 3rem;
+    }
+    
+    .hero .hero1 h3 {
+        color: #5DA271;
+        font-weight: 500;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        padding-bottom: 10px;
+    }
+    
+    
+    .hero .hero1 p {
+        color: #D4A0A7;
+        font-weight: 600;
+        font-size: .9rem;
+        text-transform: capitalize;
+        padding-bottom: 3px;
+    }
+    
+    .hero2 {
+        grid-area: 'hero2';
+    }
+    .social-links-hero{
+        font-size: 15px;
+    }
+
+    /*about section*/
+    .about2 .container1 img {
+        object-fit: cover;
+        border-radius: 10px;
+        width: 45% ;
+        object-position: center;
+        margin: 5px 5px;
+    }
+
+    .about2 .container1 {
+        margin-left: 2%;
+        padding: 10px 0;
+    }
+
+    /*contact section*/
+
+    .contact .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 'form';
+    }
+
+    .contact .container .pic {
+        display: none;
+    }
+
+    .contact .container #form {
+        grid-area: form;
+    }
+}
+
+@media screen and (max-width: 770px){
+
+    .container .navbar .navbar-brand  {
+        color: #D4A0A7;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .hero  {
+        display: grid;
+        margin:70px 20px 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        overflow: hidden;
+        grid-template-areas: 
+        "hero1"
+        " hero2"
+        ;
+    }
+    .hero .hero1 {
+        text-align: left;
+    }
+    
+    .hero .hero1  h1 {
+        color: #5DA271;
+        font-weight: 600;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+    }
+    
+    .hero .hero1  {
+        margin-top: 3rem;
+        margin-left: 0;
+    }
+    
+    .hero .hero1 h3 {
+        color: #5DA271;
+        font-weight: 500;
+        font-size: 1.4rem;
+        text-transform: capitalize;
+        padding-bottom: 10px;
+    }
+    
+    
+    .hero .hero1 p {
+        color: #D4A0A7;
+        font-weight: 600;
+        font-size: 1.1rem;
+        text-transform: capitalize;
+        padding-bottom: 3px;
+    }
+    
+    .hero2 {
+        grid-area: 'hero2';
+    }
+    /*about section*/
+    .about {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr;
+        grid-template-areas: 
+        "about2"
+        " about1"
+        ;
+    }
+
+    .about2 {
+        grid-area: 'about2';
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .about1 {
+        grid-area: 'about1';
+    }
+
+    .about1 h2 {
+        text-align: center;
+    }
+    .about2 .container1 img {
+        object-fit: cover;
+        border-radius: 10px;
+        width: 30%;
+        object-position: center;
+        margin: 5px 5px;
+
+    }
+
+    .about2 .container1 {
+        margin-top: 0px;
+        margin-left: 2%;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .container .navbar .navbar-brand  {
+        color: #D4A0A7;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .hero .hero1 {
+        text-align: left;
+    }
+    
+    .hero .hero1  h1 {
+        color: #5DA271;
+        font-weight: 600;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+    }
+    
+    .hero .hero1  {
+        margin-top: 1.5rem;
+    }
+    
+    .hero .hero1 h3 {
+        color: #5DA271;
+        font-weight: 500;
+        font-size: 0.8rem;
+        text-transform: capitalize;
+        padding-bottom: 10px;
+    }
+    
+    
+    .hero .hero1 p {
+        color: #D4A0A7;
+        font-weight: 600;
+        font-size: 0.6rem;
+        text-transform: capitalize;
+        padding-bottom: 3px;
+    }
+    
+}
+
+@media screen and (max-width:320px){
+    .container .navbar .navbar-brand  {
+        color: #D4A0A7;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .navbar-toggler {
+        font-size: 50%;
+    }
+}
+
+
